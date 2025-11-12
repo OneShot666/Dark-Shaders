@@ -6264,10 +6264,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TODO : \n. Finish waves (with arguments & sub-function)\n! Add ground
-    that reflect waves\n! Add deformed glass\n! Add star texture/effect\n! Add black
-    hole\n! Add aurora borealis\n! Add coulds\n? Add storm\n? Add disco tech\n? Add
-    neon (color)\n"
+  m_Text: "TODO : \n. Upgrading water shader\n. Add aurora borealis\n! Add clouds\n!
+    Add ground that reflect waves\n! Upgrade star texture/effect\n? Add storm\n?
+    Add disco tech\n? Add neon (color)\n? Add force field\n? Add portal\nR Add fog
+    of war\nR Add deformed glass\n"
 --- !u!222 &1461262265
 CanvasRenderer:
   m_ObjectHideFlags: 0
