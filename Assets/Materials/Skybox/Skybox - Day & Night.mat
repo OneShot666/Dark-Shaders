@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skybox - Bright Day
+  m_Name: Skybox - Day & Night
   m_Shader: {fileID: -6465566751694194690, guid: ca50e520c08d68848b81595f7d8c9d8c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,29 +25,34 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _AuroraBlend: 1
-    - _AuroraColorOffset: 0
-    - _AuroraDistorsionSpeed: 1
-    - _AuroraIntensity: 0.05
-    - _AuroraPower: 1
-    - _AuroraScale: 20
-    - _AuroraTwirlStrength: 0.05
+    - _AuroraBlend: 2
+    - _AuroraColorOffset: -0.5
+    - _AuroraDistorsionSpeed: 1.5
+    - _AuroraIntensity: 1
+    - _AuroraPower: 1.2
+    - _AuroraScale: 22
+    - _AuroraTwirlStrength: 0.1
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _HorizonBlend: 100
+    - _HorizonBlend: 20
     - _NadirBlend: 0.1
-    - _StarIntensity: 50
-    - _StarQuantity: 45
-    - _StarsDensity: 1000
+    - _StarIntensity: 10000
+    - _StarQuantity: 60
+    - _StarsDensity: 800
+    - _SunSize: 0.2
     - _ZenithBlend: 0.1
     m_Colors:
     - _AuroraDistorsionMinMax: {r: 10, g: 12, b: 0, a: 0}
-    - _AuroraSpeed: {r: 0, g: 0, b: 0, a: 0}
-    - _AuroraTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _AuroraSpeed: {r: 0, g: 0.02, b: 0, a: 0}
+    - _AuroraTiling: {r: 1, g: 1.25, b: 0, a: 0}
     - _AuroraTwirlOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _GroundColor: {r: 0.054076064, g: 0.81886786, b: 0.16654538, a: 0}
-    - _HorizonColor: {r: 0.3754109, g: 0, b: 0.96981126, a: 0}
-    - _SkyColor: {r: 0.2471698, g: 0.7512841, b: 1, a: 0}
+    - _Day_Sky_Color: {r: 0.16415086, g: 0.7437135, b: 1, a: 0}
+    - _GroundColor: {r: 0, g: 0.5924529, b: 0.08886799, a: 0}
+    - _HorizonColor: {r: 0.0948612, g: 0, b: 0.5471698, a: 0}
+    - _MainLightDirection: {r: 0, g: -1.0000001, b: -0.00000011920929, a: 0}
+    - _Night_Sky_Color: {r: 0, g: 0.082097106, b: 0.35849056, a: 0}
+    - _SkyColor: {r: 0.027079696, g: 0.0014738124, b: 0.2603773, a: 0}
+    - _SunColor: {r: 4, g: 3.405974, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6499129459133981937

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MoutainShader
+  m_Shader: {fileID: -6465566751694194690, guid: f206bb280283c7e46bd2174e198c94de, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Ground_Texture:
+        m_Texture: {fileID: 2800000, guid: de4a50163e61e7e459fe9675fe4a48d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ground_Texture_1:
+        m_Texture: {fileID: 2800000, guid: de4a50163e61e7e459fe9675fe4a48d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ground_Texture_2:
+        m_Texture: {fileID: 2800000, guid: 20c3fe7fdec8b5d48ac5d43d8da21350, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Rock_Texture:
+        m_Texture: {fileID: 2800000, guid: 20c3fe7fdec8b5d48ac5d43d8da21350, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Snow_Texture_1:
+        m_Texture: {fileID: 2800000, guid: e1f39959a2169e745a48e5d94ab2a948, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Snow_Texture_2:
+        m_Texture: {fileID: 2800000, guid: d70bdfb0a70a7bd45a4de3413d415aec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Float: 0
+    - _Ground_Overlay: 0.25
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smoothness: 0
+    m_Colors:
+    - _Ground_Step: {r: 0, g: 0, b: 0, a: 0}
+    - _Ground_UV: {r: 1, g: 1, b: 0, a: 0}
+    - _Ground_UV_2: {r: 1, g: 1, b: 0, a: 0}
+    - _Ground_UV_3: {r: 1, g: 1, b: 0, a: 0}
+    - _Noise_UV: {r: 500, g: 500, b: 0, a: 0}
+    - _Rock_UV: {r: 1, g: 1, b: 0, a: 0}
+    - _Snow_Step: {r: 0, g: 1, b: 0, a: 0}
+    - _Snow_UV_1: {r: 1, g: 1, b: 0, a: 0}
+    - _Snow_UV_2: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &2185319873753067031
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6348430650515766311}
   - component: {fileID: 4152147361407027404}
   - component: {fileID: 4246609442000256823}
+  - component: {fileID: 686970208401741037}
   m_Layer: 0
   m_Name: Universe
   m_TagString: Untagged
@@ -108,3 +109,24 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &686970208401741037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9081029789085600223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec3449a36dbd6549a24a58cf01cb234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSelf: 1
+  selfRotationSpeed: 50
+  selfRotationAxis: {x: 0, y: 1, z: 0}
+  orbitEnabled: 1
+  orbitCenter: {fileID: 0}
+  orbitSpeed: 10
+  orbitDistance: 45
+  orbitAxis: {x: 0, y: 1, z: 0}
+  startAngle: 0

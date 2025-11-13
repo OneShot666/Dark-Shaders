@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2698594593886838347}
   - component: {fileID: 216489743639291109}
   - component: {fileID: 7225394795803050189}
+  - component: {fileID: 7329982360089379401}
   m_Layer: 0
   m_Name: Mirror object
   m_TagString: Untagged
@@ -108,3 +109,24 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7329982360089379401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7539210009497332395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec3449a36dbd6549a24a58cf01cb234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSelf: 1
+  selfRotationSpeed: 40
+  selfRotationAxis: {x: 0, y: 1, z: 0}
+  orbitEnabled: 1
+  orbitCenter: {fileID: 0}
+  orbitSpeed: 15
+  orbitDistance: 35
+  orbitAxis: {x: 0, y: 1, z: 0}
+  startAngle: 0
