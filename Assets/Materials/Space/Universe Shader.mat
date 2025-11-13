@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5598084934201416636
+--- !u!114 &-6461393041654690502
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Star material
-  m_Shader: {fileID: -6465566751694194690, guid: 2ebece07977f6504db0b7149c3cb0097, type: 3}
+  m_Name: Universe Shader
+  m_Shader: {fileID: -6465566751694194690, guid: 62c03191075019845b104d71f983d27b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -51,14 +51,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BorderWidth: 6
+    - _Border_Width: 1
+    - _Fullness_Percent: 0.15
+    - _GalaxiesQuantity: 15
+    - _GalaxiesSize: 135
+    - _GalaxiesSpeed: 0.003
+    - _Galaxies_Quantity: 15
+    - _Galaxies_Size: 135
+    - _Galaxies_Speed: 0.003
+    - _NoiseScale: 150
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SolarFire: 1
-    - _SurfaceDensity: 10
-    - _SurfaceSpeed: 3
+    - _ScrollSpeed: 0.1
+    - _UniverseEmptynessPercent: 0.15
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0.9981871, g: 1, b: 0, a: 1}
-    - _SolarColor: {r: 0.85660374, g: 0.46637315, b: 0, a: 0}
+    - _BorderColor: {r: 0.02943757, g: 0.019245278, b: 0.19999999, a: 0}
+    - _Border_Color: {r: 0.05841244, g: 0, b: 0.7647059, a: 0}
+    - _GalaxiesColor: {r: 1, g: 0, b: 0.6979103, a: 0}
+    - _Galaxies_Color: {r: 1, g: 0, b: 0.44639874, a: 0}
+    - _InnerColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OuterColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

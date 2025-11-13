@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skybox - Starry Night
+  m_Name: Skybox - Bright Day
   m_Shader: {fileID: -6465566751694194690, guid: ca50e520c08d68848b81595f7d8c9d8c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,18 +25,29 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - _AuroraBlend: 1
+    - _AuroraColorOffset: 0
+    - _AuroraDistorsionSpeed: 1
+    - _AuroraIntensity: 0.05
+    - _AuroraPower: 1
+    - _AuroraScale: 20
+    - _AuroraTwirlStrength: 0.05
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _HorizonBlend: 75
+    - _HorizonBlend: 100
     - _NadirBlend: 0.1
-    - _StarIntensity: 100
-    - _StarQuantity: 50
-    - _StarsDensity: 800
+    - _StarIntensity: 50
+    - _StarQuantity: 45
+    - _StarsDensity: 1000
     - _ZenithBlend: 0.1
     m_Colors:
-    - _GroundColor: {r: 0, g: 0.13207549, b: 0.018867917, a: 0}
-    - _HorizonColor: {r: 0.14078377, g: 0, b: 0.3660378, a: 0}
-    - _SkyColor: {r: 0.027079696, g: 0.0014738124, b: 0.2603773, a: 0}
+    - _AuroraDistorsionMinMax: {r: 10, g: 12, b: 0, a: 0}
+    - _AuroraSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _AuroraTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _AuroraTwirlOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _GroundColor: {r: 0.054076064, g: 0.81886786, b: 0.16654538, a: 0}
+    - _HorizonColor: {r: 0.3754109, g: 0, b: 0.96981126, a: 0}
+    - _SkyColor: {r: 0.2471698, g: 0.7512841, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6499129459133981937
