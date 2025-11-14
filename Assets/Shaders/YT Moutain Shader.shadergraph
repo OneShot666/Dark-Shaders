@@ -1917,8 +1917,8 @@
     "m_ObjectId": "184b7c94827e44609e3234a7d68a0c00",
     "m_Title": "Snow Applicatinon on relief",
     "m_Position": {
-        "x": -1077.599853515625,
-        "y": 241.5999755859375
+        "x": -1077.60009765625,
+        "y": 241.60015869140626
     }
 }
 
@@ -1958,8 +1958,8 @@
     "m_ObjectId": "1c1bb06e46424c5d90d594a054e9b35e",
     "m_Title": "Snow",
     "m_Position": {
-        "x": -2137.599609375,
-        "y": -683.1998901367188
+        "x": -2137.600341796875,
+        "y": -683.2000122070313
     }
 }
 
@@ -2210,7 +2210,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "28380e2619364b50929ab6a3d1eb0d46",
     "m_Id": 0,
-    "m_DisplayName": "Rock UV",
+    "m_DisplayName": "Ground UV 2",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2707,7 +2707,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "3d238e7be842491fa269396a02d42d47",
     "m_Id": 0,
-    "m_DisplayName": "Ground UV",
+    "m_DisplayName": "Ground UV 1",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3196,8 +3196,8 @@
     "m_ObjectId": "4c99aab3be334676a108d8a3960bfa48",
     "m_Title": "Noise",
     "m_Position": {
-        "x": -2015.9998779296875,
-        "y": -149.5999755859375
+        "x": -2016.0001220703125,
+        "y": -149.60003662109376
     }
 }
 
@@ -3720,7 +3720,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "659a9bbfae2f4e18991d40880714b2ac",
     "m_Id": 0,
-    "m_DisplayName": "Rock Texture",
+    "m_DisplayName": "Ground Texture 2",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -4056,7 +4056,7 @@
     "m_ObjectId": "6f2eef65c0b34b538a28a0b105f45e4e",
     "m_Title": "Ground Cliff find in relief",
     "m_Position": {
-        "x": -1002.39990234375,
+        "x": -1002.400146484375,
         "y": 570.4000854492188
     }
 }
@@ -4390,8 +4390,8 @@
     "m_ObjectId": "7d75bea911da4c039a10033384779b02",
     "m_Title": "Ground",
     "m_Position": {
-        "x": -2123.999755859375,
-        "y": 148.800048828125
+        "x": -2124.00048828125,
+        "y": 148.80010986328126
     }
 }
 
@@ -6560,7 +6560,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "d576915e037e4994aa1f6803bcfd30a6",
     "m_Id": 0,
-    "m_DisplayName": "Ground Texture",
+    "m_DisplayName": "Ground Texture 1",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
