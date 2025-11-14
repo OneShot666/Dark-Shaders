@@ -7,6 +7,8 @@ using System.Collections.Generic;
 public class FogOfWarManager : MonoBehaviour
 {
     public static FogOfWarManager Instance;
+    private static readonly int FogOfWarTexture = Shader.PropertyToID("_FogOfWarTexture");
+    private static readonly int FogWorldScaleOffset = Shader.PropertyToID("_FogWorldScaleOffset");
 
     [Header("Fog Texture Settings")]
     [Tooltip("The resolution of the fog texture. Higher is more detailed but costs more performance.")]
@@ -102,8 +104,8 @@ public class FogOfWarManager : MonoBehaviour
         _fogWorldScaleOffset = new Vector4(scale, scale, offsetX, offsetY);
 
         // Set the global properties that our shader will read
-        Shader.SetGlobalTexture("_FogOfWarTexture", _fogTexture);
-        Shader.SetGlobalVector("_FogWorldScaleOffset", _fogWorldScaleOffset);
+        Shader.SetGlobalTexture(FogOfWarTexture, _fogTexture);
+        Shader.SetGlobalVector(FogWorldScaleOffset, _fogWorldScaleOffset);
     }
     
     // Turns currently visible areas (white) into explored areas (grey)

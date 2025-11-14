@@ -49,11 +49,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FogOfWarTexture:
-        m_Texture: {fileID: 2800000, guid: fc6ec498e8757c849be4ba37addd1918, type: 3}
+        m_Texture: {fileID: 2800000, guid: d53b801f900bf2e48b5f7c70b718000b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 27e58c0dea1103d46bf1409ec5b03dba, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf525e06e9db7f445bad9ba12f2d7300, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

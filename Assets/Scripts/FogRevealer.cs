@@ -6,7 +6,7 @@ public class FogRevealer : MonoBehaviour
     [Tooltip("How far this object can see.")]
     public float visionRadius = 10f;
 
-    void OnEnable()
+    void Start()
     {
         if (FogOfWarManager.Instance != null)
         {
@@ -14,7 +14,7 @@ public class FogRevealer : MonoBehaviour
         }
     }
 
-    void OnDisable()
+    void OnDestroy()
     {
         if (FogOfWarManager.Instance != null)
         {
