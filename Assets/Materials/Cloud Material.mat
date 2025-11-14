@@ -53,10 +53,10 @@ Material:
     m_Floats:
     - _Cloud_Scale: 100
     - _Darkness: 0.2
-    - _Distorsion: 60
+    - _Distorsion: 62.05
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Transparency: 1
+    - _Transparency: 0.93
     - _Vertex_Offset: 1
     m_Colors:
     - _Cloud_Speed: {r: 0.02, g: 0.001, b: 0, a: 0}
