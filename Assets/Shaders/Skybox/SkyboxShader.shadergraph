@@ -1303,6 +1303,9 @@
     "m_ActiveTargets": [
         {
             "m_Id": "b92d38a2e9bb4dd2bae769351d86c721"
+        },
+        {
+            "m_Id": "abbfce142a11406a85c8fce5e02e58b0"
         }
     ]
 }
@@ -4359,7 +4362,7 @@
     "m_Title": "Aurora Borealis",
     "m_Position": {
         "x": -1400.0,
-        "y": -641.6000366210938
+        "y": -641.5999755859375
     }
 }
 
@@ -6383,6 +6386,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget",
+    "m_ObjectId": "abbfce142a11406a85c8fce5e02e58b0",
+    "m_Datas": [],
+    "m_ActiveSubTarget": {
+        "m_Id": "bb4261883cf9471fb7807bb0889e20fc"
+    },
+    "m_AllowMaterialOverride": false,
+    "m_SurfaceType": 0,
+    "m_ZTestMode": 4,
+    "m_ZWriteControl": 0,
+    "m_AlphaMode": 0,
+    "m_RenderFace": 2,
+    "m_AlphaClip": false,
+    "m_CastShadows": false,
+    "m_ReceiveShadows": false,
+    "m_DisableTint": false,
+    "m_AdditionalMotionVectorMode": 0,
+    "m_AlembicMotionVectors": false,
+    "m_SupportsLODCrossFade": false,
+    "m_CustomEditorGUI": "",
+    "m_SupportVFX": false
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
     "m_ObjectId": "b03d6e6b8ea2403da9ede21e5b2c72c0",
@@ -6744,6 +6772,12 @@
     "m_Property": {
         "m_Id": "5a118137b9ad4c3787adba6d6a2f9f5a"
     }
+}
+
+{
+    "m_SGVersion": 2,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalUnlitSubTarget",
+    "m_ObjectId": "bb4261883cf9471fb7807bb0889e20fc"
 }
 
 {
@@ -7299,8 +7333,8 @@
     "m_ObjectId": "ce7a11b9d8b64d339f392d86ba674899",
     "m_Title": "Sun",
     "m_Position": {
-        "x": -1484.80029296875,
-        "y": -908.8001098632813
+        "x": -1484.800048828125,
+        "y": -908.800048828125
     }
 }
 

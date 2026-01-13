@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour {
     [Tooltip("Target to follow (free camera mode if target is null)")]
-    [SerializeField] private Transform _target;
+    [SerializeField] private Transform target;
     [Tooltip("Distance from the target")]
     [SerializeField] private float offSet = 50f;
     [Tooltip("Speed of camera movement")]
@@ -10,16 +10,17 @@ public class CameraManager : MonoBehaviour {
     [Tooltip("Speed of camera rotation")]
     [SerializeField] private float rotation = 100f;
 
-    private bool isPaused = false;
+    private bool _isPaused;
 
     void Start() {
-        transform.LookAt(_target);                                              // Look for a leader
+        if (target) transform.LookAt(target);                                 // Look for a leader
     }
 
     void Update() {
-        if (_target != null) {
-            transform.position = Vector3.Lerp(transform.position, _target.position + _target.forward * offSet, speed * Time.unscaledDeltaTime);
-            transform.LookAt(_target);
+        if (target) {
+            transform.position = Vector3.Lerp(transform.position, target.position + target.forward * offSet, 
+                speed * Time.unscaledDeltaTime);
+            transform.LookAt(target);
         } else {                                                                // Free camera mode
             MoveCamera();
             RotateCamera();
@@ -28,8 +29,8 @@ public class CameraManager : MonoBehaviour {
 
     private void MoveCamera() {
         if (Input.GetKeyDown(KeyCode.Space)) {                                  // Un/pause
-            isPaused = !isPaused;
-            Time.timeScale = isPaused ? 0f : 1f;
+            _isPaused = !_isPaused;
+            Time.timeScale = _isPaused ? 0f : 1f;
         }
 
         Vector3 dir = Vector3.zero;
@@ -41,7 +42,7 @@ public class CameraManager : MonoBehaviour {
         if (Input.GetKey(KeyCode.Q)) dir += Vector3.up;                         // Up
         if (Input.GetKey(KeyCode.E)) dir -= Vector3.up;                         // Down
 
-        transform.position += dir.normalized * speed * Time.unscaledDeltaTime;  // Move camera
+        transform.position += dir.normalized * (speed * Time.unscaledDeltaTime);  // Move camera
     }
 
     private void RotateCamera() {
@@ -57,7 +58,7 @@ public class CameraManager : MonoBehaviour {
         transform.Rotate(Vector3.right, pitch * rotation * Time.unscaledDeltaTime, Space.Self);
     }
 
-    public void SetTarget(Transform target) {
-        _target = target;
+    public void SetTarget(Transform newTarget) {
+        target = newTarget;
     }
 }
