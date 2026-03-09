@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7337563714503738676
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test Comet Material
-  m_Shader: {fileID: -6465566751694194690, guid: d93a58cd833d3e644ac2b2314177a58e, type: 3}
+  m_Name: 2D Water
+  m_Shader: {fileID: -6465566751694194690, guid: c0e4614a4b8adfb409d86b5f2ead7932, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,27 +51,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Density: 2
-    - _Height: 5
-    - _Peak_Sharpness: 7
+    - _FoamAmount: 0.4
+    - _FoamDensity: 0.8
+    - _FoamScale: 30
+    - _FoamSpeed: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RippleDensity: 6
+    - _RippleSlimness: 8
+    - _RippleSpeed: 2
+    - _WaterScale: 3
+    - _WaterTransparency: 0.8
+    - _WaveSpeed: 0.3
     m_Colors:
-    - _Base_Color: {r: 0.21673898, g: 0.68382955, b: 0.82641506, a: 0}
-    - _MapHeight: {r: 1, g: 1, b: 1, a: 0}
-    - _UV_Scale: {r: 1, g: 1, b: 0, a: 0}
+    - _FoamColor: {r: 0.835849, g: 1, b: 0.9996752, a: 1}
+    - _RippleColor: {r: 0.28490567, g: 0.7784609, b: 1, a: 0}
+    - _WaterColor: {r: 0.02381616, g: 0.8127464, b: 0.8415094, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3506401789005329518
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 10

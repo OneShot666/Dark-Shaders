@@ -51,16 +51,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cloud_Scale: 100
-    - _Darkness: 0.2
-    - _Distorsion: 62.05
+    - _Gas_Rotation_Speed: 1
+    - _Movement_Density: 5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Transparency: 0.93
-    - _Vertex_Offset: 1
+    - _Storm_Scale: 5
+    - _Turbulence_Strength: 0.1
     m_Colors:
-    - _Cloud_Speed: {r: 0.02, g: 0.001, b: 0, a: 0}
-    - _Color: {r: 1.1501458, g: 1.496421, b: 1.8641508, a: 0.6431373}
-    - _Distorsion_Speed: {r: 0.02, g: 0.001, b: 0, a: 0}
+    - _MicroTexture_Color: {r: 0, g: 0.3886792, b: 0.3474556, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
