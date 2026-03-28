@@ -1,0 +1,41 @@
+name: CI - Dark Shaders
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_wgl:
+    name: Build WebGL
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request' # Only on main branch or in a pull request
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 
+
+      - name: Cache Unity Library
+        uses: actions/cache@v3 
+        with:
+          path: Library
+          key: Library-Build-WebGL-${{ hashFiles('Assets/**', 'Packages/**') }}
+          restore-keys: Library-Build-WebGL-
+
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v4 
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} 
+          UNITY_EMAIL:   ${{ secrets.UNITY_EMAIL }} 
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }} 
+        with:
+          targetPlatform: WebGL
+          buildName: DarkShaders
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build/WebGL/DarkShaders 	# Generate folder by unity-builder
+          branch: gh-pages 		# Create branch if doesn't exists
+          clean: true
